@@ -5,3 +5,5 @@ grid-lookup.txt
 *.cpg
 *.dbf
 *.prj
+
+/shapefiles/

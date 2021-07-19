@@ -104,7 +104,8 @@ To run this script, you will need the following:
 - A free account with openweathermap.org
 - An API key from openweathermap.org
 - Coordinates of the bottom-left and top-right corner of your area of interest.
-- A shapefile that contains the boundaries of your area of interest. This is used to determine which areas of the LED matrix remain black and which ones we need to get weather data for. This shape file should only contain one multi-polygon layer.
+- A shapefile that contains the boundaries of your area of interest. This is used to determine which areas of the LED matrix remain black and which ones we need to get weather data for. This shape file should only contain one multi-polygon layer. Examples are available here: http://www.diva-gis.org/gdata
+   - When you change the shapefile you're using or adjust the bounding box parameters (see below), please delete the `grid-lookup.txt` file and restart the script.
 
 Rename `config.template.txt` to `config.txt`.
 
@@ -133,15 +134,17 @@ max_temp = <Optional parameter used for scaling of the temperature display>
 If `min_temp` and `max_temp` are set, the script will use those to calculate the color for each grid cell, rather than the current min and max temperature.
 This has the advantage that you can immediately tell if it's a hotter or colder day based on the overall colors, but you lose distinction between the colors as on most days only a smaller section of the overall colour range will be used.
 
+
+Please note that the first run with take significantly longer to show the result, due to the necessity to generate the lookup grid. Following runs will be faster. This step is also quite CPU intensive, so you may see some flickering. Wait until the actual weather data shows up to judge whether flickering is an issue.
+
 ## Things planned for the future
 
 I have some intention to add very specific features to this based on my requirements. So things that are likely to be added in the future are:
 - LED brightness adjustment based on time of day.
-- 
 
 ## Word of warning
 
-This script has entirely been cobbled together by a person with little experience in Python. I'm usually a JavaScript and Java person. I'm sure there are plenty of things that can be improved and I'm happy to receive pull requests.
+This script has entirely been cobbled together by a person with little experience in Python. I was learning Python basics as I went, so I'm pretty sure some people will facepalm hard when they see the code. But, hey, it's working. I'm sure there are plenty of things that can be improved and I'm happy to receive pull requests.
 
 Please be aware that I am not planning to actively support this repository. I'll incorporate pull requests if they're aligned with what I have in mind for this tool, but I won't be adding new features based on issues as I simply do not have the time.
 
