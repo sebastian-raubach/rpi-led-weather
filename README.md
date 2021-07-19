@@ -1,7 +1,7 @@
 # LED Weather Matrix
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sebastian-raubach/rpi-led-weather/master/public/img/logo.png" width="200" alt="Logo">
+  <img src="https://raw.githubusercontent.com/sebastian-raubach/rpi-led-weather/main/img/logo.png" width="200" alt="Logo">
 </p>
 
 ## Concept
@@ -22,7 +22,7 @@ Keep in mind that the aspect ratio of the LED matrix will affect the area you ca
 
 Saved as an image, the resulting image for Scotland may look like this:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sebastian-raubach/rpi-led-weather/master/public/img/scotland.png" width="200" alt="Logo">
+  <img src="https://raw.githubusercontent.com/sebastian-raubach/rpi-led-weather/main/img/scotland.png" width="200" alt="Logo">
 </p>
 
 ## Usage
