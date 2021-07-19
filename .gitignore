@@ -1,0 +1,7 @@
+config.txt
+grid-lookup.txt
+*.shp
+*.shx
+*.cpg
+*.dbf
+*.prj

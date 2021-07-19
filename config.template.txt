@@ -1,0 +1,14 @@
+[weather-led-matrix]
+api_key = 
+cols = 
+rows = 
+color_count = 
+
+shape_file = 
+
+turn_off_delay = 
+
+lat_south = 
+lat_north = 
+lon_west = 
+lon_east = 
